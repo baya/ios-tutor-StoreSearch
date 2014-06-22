@@ -21,6 +21,7 @@
 		9EA181D81951344600E4F8B6 /* StoreSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA181D71951344600E4F8B6 /* StoreSearchTests.m */; };
 		9EA181E41951364900E4F8B6 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA181E21951364900E4F8B6 /* SearchViewController.m */; };
 		9EA181E51951364900E4F8B6 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA181E31951364900E4F8B6 /* SearchViewController.xib */; };
+		9EA181E819569B1400E4F8B6 /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA181E719569B1400E4F8B6 /* SearchResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		9EA181E11951364900E4F8B6 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		9EA181E21951364900E4F8B6 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		9EA181E31951364900E4F8B6 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		9EA181E619569B1400E4F8B6 /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		9EA181E719569B1400E4F8B6 /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				9EA181E11951364900E4F8B6 /* SearchViewController.h */,
 				9EA181E21951364900E4F8B6 /* SearchViewController.m */,
 				9EA181E31951364900E4F8B6 /* SearchViewController.xib */,
+				9EA181E619569B1400E4F8B6 /* SearchResult.h */,
+				9EA181E719569B1400E4F8B6 /* SearchResult.m */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				9EA181BD1951344500E4F8B6 /* AppDelegate.m in Sources */,
 				9EA181E41951364900E4F8B6 /* SearchViewController.m in Sources */,
+				9EA181E819569B1400E4F8B6 /* SearchResult.m in Sources */,
 				9EA181B91951344500E4F8B6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +454,7 @@
 				9EA181DD1951344600E4F8B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EA181DE1951344600E4F8B6 /* Build configuration list for PBXNativeTarget "StoreSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +463,7 @@
 				9EA181E01951344600E4F8B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
