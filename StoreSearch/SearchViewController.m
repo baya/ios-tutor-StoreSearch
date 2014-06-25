@@ -46,6 +46,8 @@ static NSString * const NothingFoundCellIdentifier = @"NothingFoundCell";
  
     self.tableView.rowHeight = 80;
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    
+    [self.searchBar becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
