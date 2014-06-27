@@ -25,6 +25,7 @@
 		9EA181EA1956A4B100E4F8B6 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA181E91956A4B100E4F8B6 /* SearchResultCell.xib */; };
 		9EDA287F1956C9E600ABE11B /* SearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDA287E1956C9E600ABE11B /* SearchResultCell.m */; };
 		9EDA28811956CD0A00ABE11B /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA28801956CD0A00ABE11B /* NothingFoundCell.xib */; };
+		9EDA2883195C22FC00ABE11B /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA2882195C22FC00ABE11B /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		9EDA287D1956C9E600ABE11B /* SearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultCell.h; sourceTree = "<group>"; };
 		9EDA287E1956C9E600ABE11B /* SearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultCell.m; sourceTree = "<group>"; };
 		9EDA28801956CD0A00ABE11B /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		9EDA2882195C22FC00ABE11B /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				9EDA287D1956C9E600ABE11B /* SearchResultCell.h */,
 				9EDA287E1956C9E600ABE11B /* SearchResultCell.m */,
 				9EDA28801956CD0A00ABE11B /* NothingFoundCell.xib */,
+				9EDA2882195C22FC00ABE11B /* LoadingCell.xib */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				9EA181C51951344500E4F8B6 /* Images.xcassets in Resources */,
 				9EA181B71951344500E4F8B6 /* InfoPlist.strings in Resources */,
+				9EDA2883195C22FC00ABE11B /* LoadingCell.xib in Resources */,
 				9EA181EA1956A4B100E4F8B6 /* SearchResultCell.xib in Resources */,
 				9EDA28811956CD0A00ABE11B /* NothingFoundCell.xib in Resources */,
 				9EA181E51951364900E4F8B6 /* SearchViewController.xib in Resources */,
