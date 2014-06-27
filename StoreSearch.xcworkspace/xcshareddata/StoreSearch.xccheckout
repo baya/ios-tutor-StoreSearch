@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>60277A95-FF86-4BDB-A22C-F9FC80ED6E10</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StoreSearch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B803AF1B-5C4A-4537-B14E-2FF43FA1E93D</key>
+		<string>ssh://github.com/baya/ios-tutor-StoreSearch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StoreSearch.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B803AF1B-5C4A-4537-B14E-2FF43FA1E93D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/baya/ios-tutor-StoreSearch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B803AF1B-5C4A-4537-B14E-2FF43FA1E93D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B803AF1B-5C4A-4537-B14E-2FF43FA1E93D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StoreSearch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
