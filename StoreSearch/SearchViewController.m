@@ -9,6 +9,7 @@
 #import "SearchViewController.h"
 #import "SearchResult.h"
 #import "SearchResultCell.h"
+#import "DetailViewController.h"
 #import <AFNetworking/AFNetworking.h>
 
 static NSString * const SearchResultCellIdentifier = @"SearchResultCell";
@@ -97,54 +98,26 @@ static NSString * const LoadingCellIdentifier = @"LoadingCell";
                                                       dequeueReusableCellWithIdentifier:SearchResultCellIdentifier
                                                       forIndexPath:indexPath];
         SearchResult *searchResult = _searchResults[indexPath.row];
-        cell.nameLabel.text = searchResult.name;
         
-        NSString *artistName = searchResult.artistName;
-        
-        if (artistName == nil) {
-            artistName = @"Unknown";
-        }
-        
-        NSString *kind = [self kindForDisplay:searchResult.kind];
-        cell.artistNameLabel.text = [NSString stringWithFormat:@"%@ (%@)", artistName, kind];
+        [cell configureForSearchResult:searchResult];
         
         return cell;
     }
     
 }
 
-- (NSString *)kindForDisplay:(NSString *)kind
-{
-    if ([kind isEqualToString:@"album"]) {
-        return @"Album";
-    } else if ([kind isEqualToString:@"audiobook"]){
-        return @"Audio Book";
-    } else if ([kind isEqualToString:@"book"]){
-        return @"Book";
-    } else if ([kind isEqualToString:@"ebook"]){
-        return @"E-Book";
-    } else if ([kind isEqualToString:@"feature-movie"]){
-        return @"Movie";
-    } else if ([kind isEqualToString:@"music-video"]) {
-        return @"Music Video";
-    } else if ([kind isEqualToString:@"podcast"]) {
-        return @"Podcast";
-    } else if ([kind isEqualToString:@"software"]) {
-        return @"APP";
-    } else if ([kind isEqualToString:@"song"]) {
-        return @"Song";
-    } else if ([kind isEqualToString:@"tv-episode"]){
-        return @"TV Episode";
-    } else {
-        return kind;
-    }
-}
 
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    DetailViewController *controller = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    
+    [self.view addSubview:controller.view];
+    [self addChildViewController:controller];
+    [controller didMoveToParentViewController:self];
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -261,8 +234,8 @@ static NSString * const LoadingCellIdentifier = @"LoadingCell";
     SearchResult *searchResult = [[SearchResult alloc] init];
     searchResult.name = dictionary[@"trackName"];
     searchResult.artistName = dictionary[@"artistName"];
-    searchResult.artworkURL60 = dictionary[@"artworkURL60"];
-    searchResult.artworkURL100 = dictionary[@"artworkURL100"];
+    searchResult.artworkURL60 = dictionary[@"artworkUrl60"];
+    searchResult.artworkURL100 = dictionary[@"artworkUrl100"];
     searchResult.storeURL = dictionary[@"trackViewUrl"];
     searchResult.kind = dictionary[@"kind"];
     searchResult.price = dictionary[@"price"];
